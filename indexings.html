@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jam’s Vault</title>
+</head>
+<body>
+  <h2>Enter Password</h2>
+  <input type="password" id="pw">
+  <button onclick="check()">Login</button>
+
+  <div id="editor" style="display:none;">
+    <h1>Welcome Jam</h1>
+    <p>Your creative suite goes here.</p>
+  </div>
+
+  <script>
+    function check() {
+      if (document.getElementById('pw').value === 'jamjam') {
+        document.getElementById('editor').style.display = 'block';
+      } else {
+        alert('Wrong password');
+      }
+    }
+  </script>
+</body>
+</html>
